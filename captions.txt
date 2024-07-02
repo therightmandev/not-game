@@ -1,0 +1,59 @@
+I was watching game dev videos and I decided to start working on my own project. The goal is not to make a good game. It's not even to make a game. It is just to do what I like in that moment. When I started I was really wanting to make particles that looked cool.
+
+day 1
+
+I was inspired by art made with different shades of the same color as well as action games that feel satisfying and have a lot of particles.
+
+Currently I'm trying to create a ball that produces some cool looking particles and moves around in a fun way. The reason it is a ball is because that's what the quick start page in pygame had as an example.
+
+
+day 2
+
+I like the particles it creates when it moves. I tried making some less intense particles for when it's not moving but I don't like how it looks right now. I think I will just remove these for now and focus on something else, like some bouncy movement or shooting something.
+
+I'm thinking of doing really snappy movement, I tried increasing the speed and I really enjoyed playing with it.
+
+day 3 
+
+I thought moving it with WASD was quite annoying, especially the up and down keys. I made it keep moving wherever you go and made it bounce off the walls. Also made it so you can only move horizontally and vertically and pressing spacebar stops the ball.
+
+Reduced ball size. Thinking of creating a dash movement.
+
+I made a dash! I also added some debugging text and some points to see if the dash was always the same distance. For the dash animation I made it slow down at the end. The first half of the distance is in full speed. From 50% to 75% it slows down linearly by 30% and from 75% to 100% of the distance it slows down linearly the rest of the speed, so it was going at 70% speed and it slows down linearly with a minimum speed of 10%.
+
+day 4
+Created ellipse to change shape during dash. For smoother movement, the speed doesn't stop reducing at 10% anymore. What happens now is it keeps reducing until the ball reaches the target, but the ball reaches the target when the speed is around 10%.
+
+I think I wanna do an explosion effect for when the ball hits something. I wanna do smoke clouds, or some fluorescent colored explosion or something. But before that I'm gonna implement the left dash.
+
+I made the left dash, which was really nice because it allowed me to clean up and understand the dash code I had made a bit more.
+
+Now I have to implement extra_dash again, which I forgot.
+
+Done, movement feels nice, now trying size variations, so we can have more dashes instead of just two across the whole screen. I temporarily removed particles because with the smaller ball the particles took a lot of visual space and I couldn't get a feel for what the ball looked like.
+
+Maybe now I'll make an explosion. 
+
+day 5
+
+Drew a line, the point is to dash at enemies to make them explode and the line is the dash path (used to aim).
+
+Made diagonal dashes (only going up). I didn't limit the dash when going up, which makes for a buggy interaction when we try to go out of bounds.
+
+Making the ball go back down after dashing diagonally is taking some more work.
+
+Fixed that
+
+I wanna move on to the explosion but at the same time I wanna keep tinkering with movement. For example, when I tried using multiple attacks (diagonal dashes in a row) it didn't feel good because I've disabled the extra dash when doing attacks. Maybe I'll fix that. OK, that was an easy fix I just had to enable it again. I thought I would have to add extra functionality to it. Oh yeah, and I need to rotate the ellipse, let me do that now.
+
+Fixed elipse direction.
+
+I made an enemy in MS Paint. I used Gimp to remove the white background. I also made the particles be on top of player instead of behind, to make the player more prominent.
+
+I'm not sure about the "jump" mechanic. I like the movement, I just don't like that you have to press space and then A or D to do it. 
+
+Now I made the movement just be the "jumps" and I'm kind of starting to like it. Now you can just use the A and D keys.
+
+Tomorrow I wanna start recording, starting with voice.
+
+That was the first 5 days. If you want to see more of this, please let me know by leaving a comment or a like. Thanks for watching.
